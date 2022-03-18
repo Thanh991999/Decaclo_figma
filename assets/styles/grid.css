@@ -14,7 +14,7 @@
 */
 
 .wide-header-above {
-    max-width: calc(1440px - 51px);
+    max-width: calc(1440px - 51*2px);
 
     margin: 0 auto;
 }

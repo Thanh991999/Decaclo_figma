@@ -3,8 +3,19 @@
 
 @media (max-width: 768px) {
 
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+
+    .mb-60 {
+        margin-bottom: 60px;
+    }
+
+    .mb-15 {
+        margin-bottom: 15px;
+    }
+
     .wrapper {
-        max-width: 375px;
     }
 
     .heading {
@@ -18,7 +29,7 @@
         bottom: 10px;
     }
 
-    .hidden {
+    .hidden-pc {
         display: block;
     }
 
@@ -50,9 +61,24 @@
     
     }
 
-    .header-func-icon {
-        font-size: 2.3rem;
+    .menu-icon {
+        font-size: 2.6rem;
     }
+
+    .close-icon {
+        font-size: 2.6rem;
+        display: none;
+    }
+
+    .close-icon.active {
+        display: block;
+    }
+
+    .menu-icon.disabled {
+        display: none;
+    }
+
+    /* .close-icon  */
 
     .header-func-list li {
         margin: 0 10px;
@@ -140,27 +166,24 @@
         padding: 8px 14px;
     }
 
+    .feature-icon--active,
     .feature-icon {
-        position: absolute;
-        font-size: 1.8rem;
         top: -5px;
         right: 0px;
-        z-index: 1;
-        padding: 10px;
-        cursor: pointer;
     }
+
+
 
     .feature-icon:hover::after {
         display: none;
-        visibility:hidden;
-    }
+    }  
 
     .collection-content {
         padding: 75px 0;
     }
 
     .collection-wrap {
-        background-position-x: -400px;
+        background: url('../img/Homepage/Rectangle\ 154.png')  no-repeat center center / cover;
     }
 
     .service-heading {
@@ -212,5 +235,62 @@
     .mb-order:nth-child(4) {
         order: 1
     }
+
+    /* menu */
+    .header-nav{
+        position: relative;
+        box-shadow: inset 0px -1px 0px #ECECEC;
+    }
+
+    .header-list {
+        position: absolute;
+        display: block;
+        top:70px;
+        left: 0;
+        background-color: var(--white-color);
+        z-index: 3;
+        width: 100%;
+        box-shadow: inset 0px -1px 0px #ECECEC; 
+        height: 0;
+        overflow: hidden;
+    }
+
+    .header-items {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .header-link::after {
+        display: none;
+    }
+
+    .header-items:hover {
+        background-color: var(--gray-bgc)
+    }
+
+    .header-items:last-child {
+        margin-bottom: 15px;
+    }
+
+    .header-items:first-child {
+        margin-top: 15px;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+        display: none;
+    }
+
+    .header-wrap {
+        z-index: 4;
+        position: relative;
+    }
+    
 
 }

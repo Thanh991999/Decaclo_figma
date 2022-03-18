@@ -17,16 +17,19 @@
 <body>
     <div class="wrapper">
         <!-- header -->
+
         <div class="header">
             <div class="header-wrap">
                  <!-- header-above -->
                 <div class="header-above ">
                     <div class="header-above__contain wide-header-above grid">
                         <div class="heading-header">FREE SHIPPING IN ITALY</div>
-                        <div class="laguage">
-                            <span>Italian</span>
-                            <img src="./assets/icon/arrow-down.png" alt="">
-                        </div>
+                        <select class="laguage-select">
+                            <option selected>Italian</option>
+                            <option >English</option>
+                            <option >Vietnam</option>
+                            <option >China</option>
+                        </select>
                     </div>
                 </div>
                  <!-- header-nav -->
@@ -36,14 +39,14 @@
                             <img src="./assets/img/logo.png" alt="">
                         </a>
 
-                        <ul class="header-list hidden-mb">
+                        <ul class="header-list">
                             <li class="header-items">
                                 <a href="#" class="header-link">
                                     SHOP
                                 </a>
                             </li>
                             <li class="header-items">
-                                <a href="#" class="header-link">
+                                <a href="./history_brand.html" class="header-link">
                                     OUR HISTORY
                                 </a>
                             </li>
@@ -66,19 +69,20 @@
 
                         <ul class="header-func-list">
                             <li>
-                                <img class="header-func-icon" src="./assets/icon/find.png" alt="">
+                                <img src="./assets/icon/find.svg" alt="">
                             </li>
                             <li>
-                                <img class="header-func-icon" src="./assets/icon/heart.png" alt="">
+                                <img src="./assets/icon/heart.svg" alt="">
                             </li>
                             <li>
-                                <img class="header-func-icon" src="./assets/icon/user.png" alt="">
+                                <img src="./assets/icon/user.svg" alt="">
                             </li>
                             <li>
-                                <img class="header-func-icon" src="./assets/icon/bag.png" alt="">
+                                <img src="./assets/icon/bag.svg" alt="">
                             </li>
-                            <li class="hidden">
-                                <i class="bi bi-list header-func-icon"></i>
+                            <li class="hidden-pc">
+                                <i class="bi bi-list menu-icon"></i>
+                                <i class="bi bi-x close-icon "></i>
                             </li>
                         </ul>
                     </div>
@@ -90,8 +94,9 @@
             <!-- hero container -->
             <div class="hero-container">
                 <div class="hero-container__wrap">
-                    <div class=" slider-contain slider-main">
-                        <div class=" wide1">
+
+                    <div style="background: url('./assets/img/slide-img-3.png') no-repeat center center / cover" id="lastClone"  class="slider-contain slider-main">
+                        <div class="slide-text wide1">
                             <h1 class="hero-heading heading">
                                 DECORAZIONI PER LE FESTE
                             </h1>
@@ -101,11 +106,68 @@
                                 </a>
                             </div>
                         </div>
-
+                       
                     </div>
-                    <img class="next-btn" src="./assets/icon/arrow-left.png" alt="">
-                    <img class="pre-btn" src="./assets/icon/arrow-right.png" alt="">
+
+                    <div style="background: url('./assets/img/slide-img-1.png') no-repeat center center / cover" class="slider-contain slider-main ">
+                        <div class="slide-text wide1">
+                            <h1 class="hero-heading heading">
+                                DECORAZIONI PER LE FESTE
+                            </h1>
+                            <div class="button">
+                                <a href="#" class="btn">
+                                    SHOP NOW
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div style="background: url('./assets/img/slide-img-2.png') no-repeat center center / cover" class="slider-contain slider-main ">
+                        <div class="slide-text wide1">
+                            <h1 class="hero-heading heading">
+                                DECORAZIONI PER LE FESTE
+                            </h1>
+                            <div class="button">
+                                <a href="#" class="btn">
+                                    SHOP NOW
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div style="background: url('./assets/img/slide-img-3.png') no-repeat center center / cover" class="slider-contain slider-main ">
+                        <div class="slide-text wide1">
+                            <h1 class="hero-heading heading">
+                                DECORAZIONI PER LE FESTE
+                            </h1>
+                            <div class="button">
+                                <a href="#" class="btn">
+                                    SHOP NOW
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div style="background: url('./assets/img/slide-img-1.png') no-repeat center center / cover" id="firstClone" class="slider-contain slider-main ">
+                        <div class="slide-text wide1">
+                            <h1 class="hero-heading heading">
+                                DECORAZIONI PER LE FESTE
+                            </h1>
+                            <div class="button">
+                                <a href="#" class="btn">
+                                    SHOP NOW
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
                 </div>
+                <img class="next-btn" src="./assets/icon/arrow-left.png" alt="">
+                <img class="pre-btn" src="./assets/icon/arrow-right.png" alt="">
                 
             </div>
 
@@ -260,10 +322,10 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu
                         </p>
     
-                        <div class="collection-more">
+                        <a class="collection-more">
                             SEE MORE
                             <img src="./assets/icon/left.png" alt="">
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -273,7 +335,7 @@
                 <div class="service-wrap wide1">
                     <h2 class="heading category-heading service-heading">OUR SERVICES</h2>
                     <div class="row">
-                        <div class="col l-3 m-3 c-12">
+                        <div class="col l-3 m-3 c-12 mb-20">
                             <div class="service-box">
                                 <img src="./assets/icon/box.svg" alt="">
                                 <h3 class="heading service-title">
@@ -282,13 +344,13 @@
                                 <p class="service-descript">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                 </p>
-                                <div class="collection-more service-more">
+                                <a class="collection-more service-more">
                                     SEE MORE
                                     <img src="./assets/icon/left-dark.svg" alt="">
-                                </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="col l-3 m-3 c-12">
+                        <div class="col l-3 m-3 c-12 mb-20">
                             <div class="service-box">
                                 <img src="./assets/icon/box.svg" alt="">
                                 <h3 class="heading service-title">
@@ -297,13 +359,13 @@
                                 <p class="service-descript">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                 </p>
-                                <div class="collection-more service-more">
+                                <a class="collection-more service-more">
                                     SEE MORE
                                     <img src="./assets/icon/left-dark.svg" alt="">
-                                </div>  
+                                </a>  
                             </div>
                         </div>
-                        <div class="col l-3 m-3 c-12">
+                        <div class="col l-3 m-3 c-12 mb-20">
                             <div class="service-box">
                                 <img src="./assets/icon/box.svg" alt="">
                                 <h3 class="heading service-title">
@@ -312,13 +374,13 @@
                                 <p class="service-descript">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                 </p>
-                                <div class="collection-more service-more">
+                                <a class="collection-more service-more">
                                     SEE MORE
                                     <img src="./assets/icon/left-dark.svg" alt="">
-                                </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="col l-3 m-3 c-12">
+                        <div class="col l-3 m-3 c-12 mb-20">
                             <div class="service-box">
                                 <img src="./assets/icon/box.svg" alt="">
                                 <h3 class="heading service-title">
@@ -327,10 +389,10 @@
                                 <p class="service-descript">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                 </p>
-                                <div class="collection-more service-more">
+                                <a class="collection-more service-more">
                                     SEE MORE
                                     <img src="./assets/icon/left-dark.svg" alt="">
-                                </div>
+                                </a>
                             </div>
                         </div>
                        
@@ -462,7 +524,7 @@
             </div>
         </div>
 
-        <div style="height: 1000px"></div>
+        <div class="overlay"></div>
     </div>
 
     <script src="./main.js"></script>

@@ -1,0 +1,7 @@
+.heading-history {
+    text-align: center;
+    padding: 82px 0;
+    background-color: var(--gray-bgc);
+    --font-size-bold : 2.4rem;
+    --line-height-bold: 3.6rem;
+}
