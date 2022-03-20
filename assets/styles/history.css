@@ -1,7 +1,117 @@
+.dfe {
+    display: flex;
+    justify-content: end;
+}
+
 .heading-history {
     text-align: center;
     padding: 82px 0;
     background-color: var(--gray-bgc);
     --font-size-bold : 2.4rem;
     --line-height-bold: 3.6rem;
+}
+
+.birthday {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+.birthday-vid {
+    width: 100%;
+    min-height: 498px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.birthday-heading {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.birthday-descript {
+    text-align: center;
+    margin-top: 25px;
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height-regular);
+    color: var(--text-color-secondary);
+    
+}
+
+.featured {
+    margin-top: 100px;
+    background-color: var(--gray-bgc);
+    padding-bottom: 100px;
+}
+
+.featured-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+
+}
+
+.featured-img {
+    height: 515px;
+    display: block;
+}
+
+.featured-icon {
+    margin-bottom: 30px;
+}
+
+.featured-row {
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 100px;
+
+}
+
+.featured-title {
+    margin-bottom: 25px;
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height-regular);
+    --line-height-regular: 4rem;
+    --font-size-regular: 3rem;
+    font-weight: 600;
+}
+
+.featured-descript {
+    font-size: var(--font-size-regular);
+    font-weight: 500;
+    color: var(--text-color-secondary);
+    line-height: var(--line-height-regular);
+    width: 100%;
+    max-width: 497px;
+
+}
+
+.featured-descript span {
+    color: var(--text-color);
+    font-weight: 600;
+    
+}
+
+.reasons-heading {
+    display: block;
+    color: var(--white-color);
+    margin: 0;
+    margin-bottom: 15px;
+
+}
+
+.reasons-descript {
+    font-size: var(--font-size-regular);
+    color: var(--text-color-secondary);
+    line-height: var(--line-height-regular);
+    color: #BABABF;
+    margin-bottom: 41px;
+
+}
+
+.reasons-text {
+    padding-top: 176px;
+    padding-bottom: 175px;
+    text-align: center;
 }
