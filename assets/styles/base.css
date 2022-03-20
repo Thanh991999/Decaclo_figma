@@ -34,8 +34,20 @@ html:focus-within {
     scroll-behavior: smooth;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 .mb-30 {
     margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 40px;
 }
 
 ul {
@@ -64,6 +76,11 @@ p {
     background-color: var(--white-color);
     display: inline-block;
     cursor: pointer;
+}
+
+.btn-submit {
+    color: #fff;
+    background-color: var(--dark-bgc);    
 }
 
 .heading {

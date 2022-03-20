@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/styles/grid.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/history.css">
+    <link rel="stylesheet" href="./assets/styles/dealer.css">
     <link rel="stylesheet" href="./assets/styles/responsive.css">
 </head>
 <body>
@@ -47,7 +48,7 @@
                                 </a>
                             </li>
                             <li class="header-items">
-                                <a href="#" class="header-link">
+                                <a href="./history_brand.html" class="header-link">
                                     OUR HISTORY
                                 </a>
                             </li>
@@ -57,7 +58,7 @@
                                 </a>
                             </li>
                             <li class="header-items">
-                                <a href="./dealer.html" class="header-link">
+                                <a href="#" class="header-link">
                                     BECOME A DEALER
                                 </a>
                             </li>
@@ -91,92 +92,108 @@
             </div>
         </div>
         <!-- container -->
-       <div class="history-container">
+       <div class="dealer-container">
            <h1 class="heading heading-history">
-                BRAND HISTORY
+                BECOME A DEALER
            </h1>
            
-           <div class="birthday">
-                    <div class="birthday-vid" style="background: url(./assets/img/history-img/img1.jpg) no-repeat center center / cover;">
-                        <div class="discover-play">
-                            <img src="./assets/icon/play.svg" alt="">
-                        </div> 
-                    </div>
-                    <h1 class="birthday-heading heading">BIRTH OF THE BRAND</h1>
-                    <p class="birthday-descript">
-                        The DE CARLO brand was born in Florence on November 7, 2019, thanks to the passion for precious stones that Nicholas De Carlo, a Florentine entrepreneur, has cultivated since he was a child. <br>
-                        Nicholas' goal was to launch a new line of jewelry, with a modern and innovative design, able to make all women feel unique and inimitable.
-                        <br> All this was possible thanks to creations suitable for every occasion, with shapes that recall the essence of the maison: ELEGANCE, QUALITY, PASSION.
-                    </p>
-                </div>
-           </div>
-
-           <div class="featured">
-               <div class="featured-wrap">
-                   <div class="row featured-row no-gutters">
-                       <div class="col c-6 l-6">
-                           <img src="./assets/icon/history-icon/icon-1.svg" alt="" class="featured-icon">
-                            <div class="featured-title">ELEGANCE</div>
-                            <p class="featured-descript">
-                                <span>DE CARLO means elegance</span> <br>
-                                exhibited thanks to the shining and refined stones that portray the contemporary era, sensual, simple and eye-catching creations that perfectly frame the female body, enhancing its natural beauty.
-                            </p>
-                        </div>
-                        <div class="col c-6 l-6 dfe">
-                           <img class="featured-img" src="./assets/img/history-img/img2.jpg" alt="">
-                         </div>
-                   </div>
-
-                   <div class="row featured-row no-gutters">
-                     <div class="col c-6 l-6">
-                        <img class="featured-img" src="./assets/img/history-img/img3.jpg" alt="">
-                      </div>
-                      <div class="col c-6 l-6">
-                        <img src="./assets/icon/history-icon/icon-2.svg" alt="" class="featured-icon">
-                         <div class="featured-title">QUALITY</div>
-                         <p class="featured-descript">
-                            
-                            
-                             <span>DE CARLO means quality,</span> <br>
-                             thanks to the mastery of craftsmen with over 25 years of experience in the goldsmith sector and a careful refinement of raw materials, to the shiny plating, to the vast chromatic range of the stones used.
-                         </p>
-                     </div>
-                </div>
-
-                <div class="row featured-row no-gutters">
-                    <div class="col c-6 l-6">
-                        <img src="./assets/icon/history-icon/icon-3.svg" alt="" class="featured-icon">
-                         <div class="featured-title">ELEGANCE</div>
-                         <p class="featured-descript">
-                             <span>DE CARLO means passion:</span> <br>
-                             The gift for the anniversary, for an important day or simply to celebrate everyday life ... a whirlwind of emotions, feelings and memories that will make the jewel, the extra element that can leave a little big sign.
-                         </p>
-                     </div>
-                     <div class="col c-6 l-6 dfe">
-                        <img class="featured-img" src="./assets/img/history-img/img4.jpg" alt="">
-                      </div>
-                </div>
+           <div class="form-container">
+               <div class="form-title">
+                   <h2 class="heading">
+                        BECOME OFFICIAL DE CARLO DEALER
+                   </h2>
+                   <p class="form-text">Exclusive jewels with a contemporary design, handcrafted finished and able to arouse emotions</p>
                </div>
-           </div>
 
-           <div class="reasons">
-               <div style="background: url('./assets/img/history-img/img5.jpg') no-repeat center center / cover" id="firstClone" class="slider-contain slider-main ">
-                <div class="reasons-text wide1">
-                    <h2 class="heading reasons-heading">
-                        WHY CHOOSE US ?
-                    </h2>
-                    <p class="reasons-descript">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu
-                    </p>
-                    <a href="#" class="btn">
-                        BACK TO SHOPPING NOW
-                    </a>
-                </div>
+               <form action="">
+                   <div class="row">
+                       <div class="col l-6 c-12 mb-40">
+                           <label class="form-label" for="title">TITLE</label>
+                           <div class="select">
+                                <select id="title" class="form-select">
+                                    <option selected value="1">Miss</option>
+                                    <option value="2">Mr</option>
+                                    <option value="3">Ms</option>
+                                    <option value="4">Mrs</option>
+                                </select>
+                           </div>
+                       </div>
+                       <div class="col l-6 c-12 mb-40">
+                            <label class="form-label" for="fname">FIRST NAME*</label>
+                            <input class="form-input" required type="text" name="" id="fname" placeholder='Insert your name'>
+                        </div>
+                        <div class="col l-6 c-12 mb-40">
+                            <label class="form-label" for="sname">SUR NAME*</label>
+                            <input class="form-input" required type="text" name="" id="sname" placeholder='Insert your name'>
+                        </div>
+                        <div class="col l-6 c-12 mb-40">
+                            <label class="form-label" for="email">EMAIL*</label>
+                            <input class="form-input" required type="email" name="" id="email" placeholder='Insert your Email'>
+                        </div>
+                        <div class="col l-6 c-12 mb-40">
+                            <label class="form-label" for="phone">PHONE</label>
+                            <input class="form-input" type="text" name="" id="phone" placeholder='Insert your phone'>
+                        </div>
+                        <div class="col l-6 c-12 mb-40">
+                            <label class="form-label" for="city">CITY</label>
+                            <input class="form-input" type="text" name="" id="city" placeholder='Insert your  city'>
+                        </div>
+                        <div class="col l-6 c-12 mb-40">
+                            <label class="form-label" for="company">COMPANY</label>
+                            <input class="form-input" type="text" name="" id="company" placeholder='Insert your company here'>
+                        </div>
+                        <div class="col l-6 c-12 mb-40">
+                            <label class="form-label" >PROVINCE</label>
+                            <div class="select">
+                                 <select class="form-select">
+                                     <option selected value="1">Agriento</option>
+                                     <option value="2">Ontario </option>
+                                     <option value="3">Alberta</option>
+                                     <option value="4">Labrador</option>
+                                 </select>
+                            </div>
+                        </div>
+
+                        <div class="col l-6 c-12 mb-40">
+                            <label class="form-label" for="company">VAT NUMBER</label>
+                            <input class="form-input" type="text" name="" id="company" placeholder='Insert your VAT number'>
+                        </div>
+                       
+                        <div class="col l-6 c-12 mb-40">
+                            <label class="form-label" >REQUEST</label>
+                            <div class="select">
+                                 <select class="form-select">
+                                     <option selected value="1">Dealer</option>
+                                     <option value="2">Suporter </option>
+                                 </select>
+                            </div>
+                        </div>
+
+                        <div class="col l-12 c-12 mb-50">
+                            <label class="form-label" for="company">VAT NUMBER</label>
+                            <input class="form-input form-mess" type="text" name="" id="company" placeholder='Write your message here'>
+                        </div>
+
+                        <div class="form-choose col l-12 c-12 mb-20">
+                            <input type="checkbox" name="" id="checked1">
+                            <label for="checked1">I agree to receive communications regarding exclusive offers, services and news</label>
+                        </div>
+                        <div class="form-choose col l-12 c-12 mb-50">
+                            <input type="checkbox" name="" id="checked2">
+                            <label for="checked2">After reading the privacy policy , I consent to the processing of my personal data.</label>
+                        </div>
+
+                        <input class="btn btn-submit col" type="submit" value="SEND INQUIRY">
+
+                   </div>
+               </form>
+
+               
+
+
+
            </div>
            
-        </div>
-
-       </div>
        
         <div class="footer">
             <div class="footer-grap wide1">
