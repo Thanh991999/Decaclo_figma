@@ -236,16 +236,20 @@
 
 .discover-play img{
     cursor: pointer;
+}
 
+.discover-col {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-bgc);
+    
 }
 
 .discover-content {
     background-color: var(--gray-bgc);
+    padding: 0 90px
 }
 
-.discover-content {
-    padding: 133px 90px;
-}
 
 .discover-content__text {
     margin: 20px 0 70px;

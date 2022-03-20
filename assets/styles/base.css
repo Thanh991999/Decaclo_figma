@@ -76,6 +76,8 @@ p {
     background-color: var(--white-color);
     display: inline-block;
     cursor: pointer;
+    outline: 0;
+    border: none;
 }
 
 .btn-submit {
