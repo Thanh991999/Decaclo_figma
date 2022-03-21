@@ -12,10 +12,8 @@
 }
 
 .birthday {
-    max-width: 980px;
-    margin: 0 auto;
-    margin-top: 100px;
-
+    padding-top: 100px;
+    
 }
 
 .birthday-vid {
@@ -46,15 +44,11 @@
     padding-bottom: 100px;
 }
 
-.featured-wrap {
-    max-width: 1180px;
-    margin: 0 auto;
-
-}
 
 .featured-img {
-    height: 515px;
     display: block;
+    width: 100%;
+    max-width: 500px;
 }
 
 .featured-icon {

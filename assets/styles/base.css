@@ -35,9 +35,9 @@ html:focus-within {
     scroll-behavior: smooth;
 }
 
-.mb-20 {
+/* .mb-20 {
     margin-bottom: 20px;
-}
+} */
 
 .mb-30 {
     margin-bottom: 30px;
@@ -98,3 +98,8 @@ p {
     display: none;
 }
 
+.df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

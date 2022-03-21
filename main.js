@@ -104,5 +104,13 @@ function silderCustomer() {
 
 silderCustomer();
 
+// playvideo
+
+function playVideo() {
+    const btnPlay = $('.discover-play img');
+    console.log(btnPlay);
+}
+
+playVideo();
 
 

@@ -22,11 +22,11 @@
 
 .sub-nav__right {
     display: flex;
+    justify-content: space-between;
 }
 
 .filter {
     margin-left: 68px;
-    margin-right: 139px;
     font-size: 1.6rem;
     line-height: 1.9rem;
     letter-spacing: var(--letter-spacing); 
@@ -37,7 +37,6 @@
     font-size: var(--font-size-regular);
     line-height: var(--line-height-regular);
     color: var(--color-text-secondary);
-    margin-left: 121px;
 }
 
 .product-sort {
@@ -90,4 +89,8 @@
 
 .product-sort__item:hover {
     background-color: var(--gray-bgc);
+}
+
+.shop-featured {
+    margin-bottom: 60px;
 }
