@@ -77,7 +77,10 @@
 .solve {
     margin-top: 5px;
     overflow: hidden;
-    height: 0;
+}
+
+.solve.active {
+
 }
 
 .solve-text {

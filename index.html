@@ -37,7 +37,7 @@
                  <!-- header-nav -->
                 <div class="header-nav">
                     <div class="header-nav__contain wide grid">
-                        <a href="#" class="header-logo">
+                        <a href="./index.html" class="header-logo">
                             <img src="./assets/img/logo.png" alt="">
                         </a>
 
@@ -76,10 +76,20 @@
 
                         <ul class="header-func-list">
                             <li>
-                                <img src="./assets/icon/find.svg" alt="">
+                                <div class="tool-search">
+                                    <img src="./assets/icon/find.svg" alt="">
+                                    <div class="search-form">
+                                        <form class="nav-form" action="">
+                                            <input class="search-form__control" placeholder="Search product on Decarlo" type="search" name="" id="">
+                        
+                                            <button class="search-form__btn" type="submit" value="">search</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </li>
                             <li>
                                 <img src="./assets/icon/heart.svg" alt="">
+                                
                             </li>
                             <li>
                                 <img src="./assets/icon/user.svg" alt="">
@@ -102,7 +112,7 @@
             <div class="hero-container">
                 <div class="hero-container__wrap">
 
-                    <div style="background: url('./assets/img/slide-img-3.png') no-repeat center center / cover" id="lastClone"  class="slider-contain slider-main">
+                    <div style="background: url('./assets/img/slide-img-3.jpg') no-repeat center center / cover" id="lastClone"  class="slider-contain slider-main">
                         <div class="slide-text grid wide1">
                             <h1 class="hero-heading heading">
                                 DECORAZIONI PER LE FESTE
@@ -116,7 +126,7 @@
                        
                     </div>
 
-                    <div style="background: url('./assets/img/slide-img-1.png') no-repeat center center / cover" class="slider-contain slider-main ">
+                    <div style="background: url('./assets/img/slide-img-1.jpg') no-repeat center center / cover" class="slider-contain slider-main ">
                         <div class="slide-text grid wide1">
                             <h1 class="hero-heading heading">
                                 DECORAZIONI PER LE FESTE
@@ -130,7 +140,7 @@
                        
                     </div>
 
-                    <div style="background: url('./assets/img/slide-img-2.png') no-repeat center center / cover" class="slider-contain slider-main ">
+                    <div style="background: url('./assets/img/slide-img-2.jpg') no-repeat center center / cover" class="slider-contain slider-main ">
                         <div class="slide-text grid wide1">
                             <h1 class="hero-heading heading">
                                 DECORAZIONI PER LE FESTE
@@ -144,7 +154,7 @@
                        
                     </div>
 
-                    <div style="background: url('./assets/img/slide-img-3.png') no-repeat center center / cover" class="slider-contain slider-main ">
+                    <div style="background: url('./assets/img/slide-img-3.jpg') no-repeat center center / cover" class="slider-contain slider-main ">
                         <div class="slide-text grid wide1">
                             <h1 class="hero-heading heading">
                                 DECORAZIONI PER LE FESTE
@@ -158,7 +168,7 @@
                        
                     </div>
 
-                    <div style="background: url('./assets/img/slide-img-1.png') no-repeat center center / cover" id="firstClone" class="slider-contain slider-main ">
+                    <div style="background: url('./assets/img/slide-img-1.jpg') no-repeat center center / cover" id="firstClone" class="slider-contain slider-main ">
                         <div class="slide-text grid wide1">
                             <h1 class="hero-heading heading">
                                 DECORAZIONI PER LE FESTE
@@ -233,10 +243,10 @@
                     <div class="row no-gutters">
                         <div class="col l-6 m-6 c-12">
                             <div class="discover-vid" style="background: url(./assets/img/discocer.jpg) no-repeat center center / cover;">
-                                <div class="discover-play">
+                                <div class="discover-play" >
                                     <img src="./assets/icon/play.svg" alt="">
                                 </div> 
-                                <iframe class="control-video" width="560" height="315" src="https://www.youtube.com/embed/kk-1bEP-7CA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <video controls class="control-video" src="./assets/video/video-ad.mp4"></video>
                             </div>
                         </div>
                         <div class="col l-6 m-6 c-12 discover-col">
@@ -536,5 +546,7 @@
     </div>
 
     <script src="./main.js"></script>
+    <script src="./playVideo.js"></script>
+    
 </body>
 </html>

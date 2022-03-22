@@ -47,7 +47,7 @@ productHeartFill.forEach(function(ele, index)
 
 menuOpen.addEventListener('click',function() {
     document.querySelector('.header-list').style.transition = 'all 0.5s ease';
-    document.querySelector('.header-list').style.height = '300px';
+    document.querySelector('.header-list').style.height = '367px';
     menuOpen.classList.add('disabled');
     menuClose.classList.add('active');
     document.querySelector('.overlay').style.display='block';
@@ -104,13 +104,7 @@ function silderCustomer() {
 
 silderCustomer();
 
-// playvideo
 
-function playVideo() {
-    const btnPlay = $('.discover-play img');
-    console.log(btnPlay);
-}
 
-playVideo();
 
 

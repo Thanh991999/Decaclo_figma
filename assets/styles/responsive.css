@@ -152,6 +152,10 @@
     }
 
     /* menu */
+    .search-form__btn,
+    .search-form__control {
+        font-size: 1.5rem;
+    }
    
     
 
@@ -210,9 +214,7 @@
 
     /* .close-icon  */
 
-    .header-func-list li {
-        margin: 0 10px;
-    }
+   
 
     .hero-heading {
         padding: 215px 0 15px;

@@ -114,8 +114,8 @@
 }
 
 .header-func-list li {
-    margin: 0 13px;
-    padding: 10px 0;
+    margin: 0 3px;
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -365,7 +365,7 @@
 }
 
 .collection-wrap {
-    background: url('../img/collection-inmg.png') no-repeat center center / cover;
+    background: url('../img/collection-inmg.jpg') no-repeat center center / cover;
 }
 
 .collection-content {
@@ -574,6 +574,76 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
+    z-index: -12;
     height: 100%;
+    background-color: #000;
+}
+
+.header-nav {
+    position: relative;
+}
+
+.tool-search:hover .search-form{
+    display: block;
+}
+
+.search-form {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    height: 100%;
+    display: none;
+}
+
+.nav-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 5%;
+}
+
+.search-form__control {
+    border-style: none;
+    width: 85%;
+    font-size: 1.9rem;
+    color: var(--text-color);
+    outline: none;
+    padding: 10px;
+    position: relative;
+    display: block;
+    flex: 1;
+}
+
+.nav-form::after {
+    content: "";
+    position: absolute;
+    width: 96%;
+    background: url('../img/double-dotted.png');
+    height: 3px;
+    top: 15%;
+    left: 2%;
+}
+
+.nav-form::before {
+    content: '';
+    position: absolute;
+    width: 96%;
+    background: url(../img/double-dotted.png);
+    height: 3px;
+    bottom: 15%;
+    left: 2%;
+}
+
+.search-form__btn {
+    border-style: none;
+    color: #e34444;
+    text-transform: uppercase;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 1.9rem;
+    cursor: pointer;
 }
