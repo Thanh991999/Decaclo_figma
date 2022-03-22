@@ -176,7 +176,7 @@
 }
 
 /* >= Tablet */
-@media (min-width: 740px) {
+@media (min-width: 767px) {
     .row {
         margin-left: -10px;
         margin-right: -10px;
@@ -464,7 +464,7 @@
 }
 
 /* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .wide {
         width: calc(768px - 16*2px);
     }
@@ -482,14 +482,14 @@
     }
 }
 
-@media (max-width: 739px) {
+@media (max-width: 767px) {
     
-    .wide2,
+    /* .wide2,
     .wide-header-above,
     .wide,
     .wide1 {
         width: calc(345px);
-    }
+    } */
 
 }
 

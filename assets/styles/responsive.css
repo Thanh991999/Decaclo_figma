@@ -157,8 +157,12 @@
         font-size: 1.5rem;
     }
    
-    
+    .container__small,
+    .container__large {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
 
+    }
 }
 
 /* tablet */
@@ -174,6 +178,10 @@
 
     .featured-wrap {
         text-align: center;
+    }
+
+    .discover-content {
+        padding: 0 60px;
     }
 }
 
