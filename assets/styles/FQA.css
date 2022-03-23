@@ -7,6 +7,14 @@
     margin-bottom: 60px;
 }
 
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
+
 .fqa-menu__item {
     margin: 0 30px;
     padding: 10px;
@@ -55,6 +63,10 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
+}
+
+.list-questions__title p {
+    text-transform: uppercase;
 }
 
 .list-questions__title span {

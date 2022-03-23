@@ -1,8 +1,11 @@
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-// variable icon heart
+// varible căn giữa btn category
 const btnCategory = $$('.btn-category');
+
+// variable icon heart
 const productsHeart = $$('.feature-product .feature-icon');
 const productHeartFill = $$('.feature-product .feature-icon--active');
 
@@ -10,19 +13,15 @@ const productHeartFill = $$('.feature-product .feature-icon--active');
 
 const menuOpen = $('.menu-icon');
 const menuClose = $('.close-icon');
-// variable slider
 
-const nextBtn = $('.next-btn');
-const preBtn= $('.pre-btn');
-const boxImages = $$('.slider-contain');
-const mainSlide = $('.hero-container__wrap');
-const size = boxImages[0].offsetWidth;
 
+// căn giữa btn category
 btnCategory.forEach(function(ele)
 {
     ele.style.left = `calc(50% - ${ele.clientWidth/2}px)`;
 })
 
+// icon heart
 productsHeart.forEach(function(ele, index)
 {
     ele.onclick = function(event)
@@ -42,6 +41,36 @@ productHeartFill.forEach(function(ele, index)
     }
    
 })
+
+// heart-on-detail
+
+function heart(){
+    const detailHeart = $('.option-like__icon');
+    const detailHeartFill = $('.option-like__icon-fill');
+    
+    if((detailHeart || detailHeartFill) === null) return;
+    
+    detailHeart.onclick = function(event)
+    {
+        detailHeart.classList.remove('active');
+        detailHeartFill.classList.add('active');
+    }
+       
+    
+    
+    
+    detailHeartFill.onclick = function(event)
+    {
+        detailHeartFill.classList.remove('active');
+        detailHeart.classList.add('active');
+    } 
+
+}
+
+heart();
+
+
+
 
 // close-open menu mobile 
 
@@ -64,45 +93,7 @@ menuClose.addEventListener('click',function() {
 
 // slider
 
-function silderCustomer() {
-    let counter = 1;
 
-    mainSlide.style.transform = `translateX(${-size * counter}px)`;
-    
-    nextBtn.addEventListener('click', function() {
-        if(counter >= boxImages.length) return;
-        mainSlide.style.transition = "transform 0.4s ease-in-out";
-        counter++;
-        mainSlide.style.transform = `translateX(${-size * counter}px)`
-       
-    });
-
-    preBtn.addEventListener('click', function() {
-        if(counter <= 0) return;
-        mainSlide.style.transition = "transform 0.4s ease-in-out";
-        counter--;
-        mainSlide.style.transform = `translateX(${-size * counter}px)`
-       
-    });
-
-    mainSlide.addEventListener('transitionend', function() {
-        if(boxImages[counter].id === 'lastClone') {
-            mainSlide.style.transition = "none";
-            counter = boxImages.length - 2;
-            mainSlide.style.transform = `translateX(${-size * counter}px)`
-
-        }
-        if(boxImages[counter].id === 'firstClone') {
-            console.log(counter)
-            mainSlide.style.transition = "none";
-            counter = boxImages.length - counter;
-            mainSlide.style.transform = `translateX(${-size * counter}px)`
-
-        }
-    })
-}
-
-silderCustomer();
 
 
   

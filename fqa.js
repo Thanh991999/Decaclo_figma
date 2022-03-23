@@ -39,6 +39,8 @@ listQuestion.forEach(function(ele, index)
 
 // menu
 
+const question = $$('.question')
+
 menuItem.forEach(function(ele, index){
     ele.addEventListener('click', function(e){
         document.querySelector('.active.fqa-menu__item').classList.remove('active');
@@ -46,5 +48,8 @@ menuItem.forEach(function(ele, index){
 
         ele.classList.add('active');
         menuLink[index].classList.add('fqa-menu__link--active');
+
+        document.querySelector('.question.active').classList.remove('active');
+        question[index].classList.add('active');
     })
 })
