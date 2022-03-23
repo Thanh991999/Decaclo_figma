@@ -163,6 +163,20 @@
         padding-right: 15px !important;
 
     }
+
+    .header__notify {
+        max-width: 300px;
+        right: -90px;
+    }
+
+    .header__notify::before,
+    .header__notify::after {
+        right: 84px;
+    }
+
+    .header__cart-list {
+        max-width: 300px;
+    }
 }
 
 /* tablet */
@@ -335,5 +349,10 @@
 
     .header-link {
         --font-size-regular: 1.1rem;
+    }
+
+    .header__cart-list::before {
+        border-color: transparent transparent #ecdada transparent;
+        top: -25px;
     }
 }
