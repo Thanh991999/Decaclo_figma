@@ -177,6 +177,21 @@
     .header__cart-list {
         max-width: 300px;
     }
+
+    .header-nav {
+        position: relative;
+    }
+
+    .tool-search {
+        position: initial;
+    }
+
+    .search-form {
+        height: 70px;
+        width: 100%;
+        left: 0;
+        top: 100%;
+    }
 }
 
 /* tablet */
@@ -396,6 +411,17 @@
     .header__cart-list::before {
         border-color: transparent transparent #ecdada transparent;
         top: -25px;
+    }
+    
+    .container-pc-low {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+
+    }
+
+    .search-form {
+        width: 650px;
+        left: -665px;
     }
     
 }

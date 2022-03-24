@@ -19,8 +19,8 @@ cart.addEventListener('click', function() {
     $('.header__cart-list').classList.toggle('active');
 });
 
-// const toolSearch = $('.tool-search');
+const toolSearch = $('.tool-search img');
 
-// toolSearch.addEventListener('click', function() {
-//     $('.search-form').classList.toggle('active');
-// });
+toolSearch.addEventListener('click', function() {
+    $('.search-form').classList.toggle('active');
+});
