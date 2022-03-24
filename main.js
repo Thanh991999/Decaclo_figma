@@ -55,10 +55,6 @@ function heart(){
         detailHeart.classList.remove('active');
         detailHeartFill.classList.add('active');
     }
-       
-    
-    
-    
     detailHeartFill.onclick = function(event)
     {
         detailHeartFill.classList.remove('active');
@@ -68,9 +64,6 @@ function heart(){
 }
 
 heart();
-
-
-
 
 // close-open menu mobile 
 
@@ -91,7 +84,27 @@ menuClose.addEventListener('click',function() {
 
 })
 
-// slider
+// open-menu-2
+
+const iconArrowDown = $('.header-items__icon');
+const menuHeight = $('.product-option-1');
+
+
+console.log()
+
+iconArrowDown.addEventListener('click',function() {
+    if(menuHeight.offsetHeight === 0) {
+        iconArrowDown.classList.add('icon-rotate');
+        document.querySelector('.product-option-1').style.height = '80px';
+    }
+    else {
+        iconArrowDown.classList.remove('icon-rotate');
+        document.querySelector('.product-option-1').style.height = '0px';
+    }
+    
+});
+
+
 
 
 

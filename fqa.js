@@ -10,9 +10,6 @@ const menuItem = $$('.fqa-menu__item');
 const menuLink = $$('.fqa-menu__link');
 
 
-
-
-
 const heightSolveEle = solve[2].clientHeight;
 console.log(heightSolveEle)
 
